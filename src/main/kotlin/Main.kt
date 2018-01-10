@@ -9,7 +9,7 @@ import com.ecwid.consul.v1.agent.model.NewService
 fun main(args: Array<String>) {
     val consulClient = ConsulClient("172.20.209.23", 8500)
     val newService = NewService()
-    newService.id = "myapp_0100500"
+    newService.id = "myapp_remote"
     newService.name = "myapp"
     newService.tags = listOf("EU-West", "EU-East")
     newService.port = 7000
